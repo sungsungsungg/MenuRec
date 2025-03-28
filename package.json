@@ -7,9 +7,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node index.js",
+    "start": "node src/index.js",
     "client": "npm run build --prefix src/components",
-    "server": "node index.js",
+    "server": "node src/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
