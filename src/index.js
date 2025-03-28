@@ -4,13 +4,24 @@ import cors from 'cors';
 import env from "dotenv";
 
 // Use CORS middleware to allow requests from port 5173
+const path = require('path');
+
+if (process.env.NODE_ENV === 'production') {
+  // Serve the static files from the React app
+  app.use(express.static(path.join(__dirname, 'client/build')));
+
+  // Catch-all handler to serve the React app for any unmatched routes
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
 
 
 // Additional middleware and routes...
 env.config({ path: '../.env' });
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 app.use(cors());
