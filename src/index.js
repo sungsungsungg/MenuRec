@@ -2,19 +2,10 @@ import express from "express";
 import pg from "pg";
 import cors from 'cors';
 import env from "dotenv";
-
+import path from "path";
 // Use CORS middleware to allow requests from port 5173
-const path = require('path');
 
-if (process.env.NODE_ENV === 'production') {
-  // Serve the static files from the React app
-  app.use(express.static(path.join(__dirname, 'client/build')));
 
-  // Catch-all handler to serve the React app for any unmatched routes
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  });
-}
 
 
 // Additional middleware and routes...
@@ -24,10 +15,19 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 
+
 app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, 'src', 'components', 'build')));
+  
+    // Catch-all handler for any unmatched routes (so React handles routing)
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'src', 'components', 'build', 'index.html'));
+    });
+  }
 
 const db = new pg.Client({
     user: process.env.PG_USER,
