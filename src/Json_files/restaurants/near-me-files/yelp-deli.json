@@ -1,0 +1,1021 @@
+[
+  {
+    "id": "V7lXZKBDzScDeGB8JmnzSA",
+    "alias": "katzs-delicatessen-new-york",
+    "name": "Katz's Delicatessen",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/2JuIC4Mdxbt86Hu9Zbt88A/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/katzs-delicatessen-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 16288,
+    "categories": [
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "sandwiches", "title": "Sandwiches" },
+      { "alias": "soup", "title": "Soup" }
+    ],
+    "rating": 4.1,
+    "coordinates": {
+      "latitude": 40.72221127798768,
+      "longitude": -73.98747940414935
+    },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "205 E Houston St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10002",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["205 E Houston St", "New York, NY 10002"]
+    },
+    "phone": "+12122542246",
+    "display_phone": "(212) 254-2246",
+    "distance": 1132.761804633198,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0800", "end": "2300", "day": 0 },
+          { "is_overnight": false, "start": "0800", "end": "2300", "day": 1 },
+          { "is_overnight": false, "start": "0800", "end": "2300", "day": 2 },
+          { "is_overnight": false, "start": "0800", "end": "2300", "day": 3 },
+          { "is_overnight": false, "start": "0800", "end": "2345", "day": 4 },
+          { "is_overnight": false, "start": "0000", "end": "2345", "day": 5 },
+          { "is_overnight": false, "start": "0000", "end": "2300", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "https://localmenu.katzsdelicatessen.com/",
+      "open24_hours": false,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "VrCCr45dhN-RRM107iptdg",
+    "alias": "russ-and-daughters-new-york",
+    "name": "Russ & Daughters",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/fZTO8KchNNnwnwNDyIZXOA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/russ-and-daughters-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 2959,
+    "categories": [
+      { "alias": "bagels", "title": "Bagels" },
+      { "alias": "smokehouse", "title": "Smokehouse" },
+      { "alias": "bakeries", "title": "Bakeries" }
+    ],
+    "rating": 4.3,
+    "coordinates": { "latitude": 40.722589, "longitude": -73.9882828294139 },
+    "transactions": ["delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "179 E Houston St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10002",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["179 E Houston St", "New York, NY 10002"]
+    },
+    "phone": "+12124754880",
+    "display_phone": "(212) 475-4880",
+    "distance": 1125.6773842558964,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 0 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 1 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 2 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 3 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 4 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 5 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "http://shop.russanddaughters.com/#menu-section",
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "n-szxTmEg8UWhiadbvz_Ug",
+    "alias": "russo-mozzarella-and-pasta-new-york",
+    "name": "Russo Mozzarella & Pasta",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vFjfOK2zN5aRunUM_BuDWw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/russo-mozzarella-and-pasta-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 129,
+    "categories": [
+      { "alias": "cheese", "title": "Cheese Shops" },
+      { "alias": "pastashops", "title": "Pasta Shops" }
+    ],
+    "rating": 4.3,
+    "coordinates": {
+      "latitude": 40.729401179008,
+      "longitude": -73.984412681264
+    },
+    "transactions": [],
+    "price": "$$",
+    "location": {
+      "address1": "344 E 11th St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10003",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["344 E 11th St", "New York, NY 10003"]
+    },
+    "phone": "+12122547452",
+    "display_phone": "(212) 254-7452",
+    "distance": 314.53859751424636,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0830", "end": "1900", "day": 0 },
+          { "is_overnight": false, "start": "0830", "end": "1900", "day": 1 },
+          { "is_overnight": false, "start": "0830", "end": "1900", "day": 2 },
+          { "is_overnight": false, "start": "0830", "end": "1900", "day": 3 },
+          { "is_overnight": false, "start": "0830", "end": "1900", "day": 4 },
+          { "is_overnight": false, "start": "0830", "end": "1900", "day": 5 },
+          { "is_overnight": false, "start": "1030", "end": "1600", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "pWywDImlX0n_XKPNg0Bizg",
+    "alias": "sunny-and-annies-new-york",
+    "name": "Sunny and Annie's",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jgBWM6f3Ae5vd9GXFPubpw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/sunny-and-annies-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 582,
+    "categories": [
+      { "alias": "sandwiches", "title": "Sandwiches" },
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "grocery", "title": "Grocery" }
+    ],
+    "rating": 4.4,
+    "coordinates": { "latitude": 40.72464, "longitude": -73.98168 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "94 Ave B",
+      "address2": null,
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["94 Ave B", "New York, NY 10009"]
+    },
+    "phone": "+12126773131",
+    "display_phone": "(212) 677-3131",
+    "distance": 758.907931163338,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 0 },
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 1 },
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 2 },
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 3 },
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 4 },
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 5 },
+          { "is_overnight": true, "start": "0600", "end": "0600", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "ADHX7nBixDPVlq3OXhny0g",
+    "alias": "faiccos-italian-specialties-new-york",
+    "name": "Faicco's Italian Specialties",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/uwjheGdZAzY4OeaBFhEKeQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/faiccos-italian-specialties-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 779,
+    "categories": [
+      { "alias": "meats", "title": "Meat Shops" },
+      { "alias": "italian", "title": "Italian" }
+    ],
+    "rating": 4.6,
+    "coordinates": { "latitude": 40.7311, "longitude": -74.00316 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "260 Bleecker St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10014",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["260 Bleecker St", "New York, NY 10014"]
+    },
+    "phone": "+12122431974",
+    "display_phone": "(212) 243-1974",
+    "distance": 1791.3914283508304,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0900", "end": "1800", "day": 1 },
+          { "is_overnight": false, "start": "0900", "end": "1800", "day": 2 },
+          { "is_overnight": false, "start": "0900", "end": "1800", "day": 3 },
+          { "is_overnight": false, "start": "0900", "end": "1800", "day": 4 },
+          { "is_overnight": false, "start": "0900", "end": "1800", "day": 5 },
+          { "is_overnight": false, "start": "0900", "end": "1500", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "https://faiccos.weeblyte.com/menu",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "46DAI5tOgV9GjjRpz7xeHA",
+    "alias": "paradise-gourmet-deli-new-york",
+    "name": "Paradise Gourmet Deli",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/v78C788mazrEtQIni7GQkg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/paradise-gourmet-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 4,
+    "categories": [{ "alias": "delis", "title": "Delis" }],
+    "rating": 4.8,
+    "coordinates": {
+      "latitude": 40.72760683483381,
+      "longitude": -73.97925903198755
+    },
+    "transactions": ["pickup", "delivery"],
+    "location": {
+      "address1": "175 Avenue B",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["175 Avenue B", "New York, NY 10009"]
+    },
+    "phone": "",
+    "display_phone": "",
+    "distance": 481.9249561509427,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 0 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 1 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 2 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 3 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 4 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 5 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "qdmqhIYedl_AFR_sXyYfKA",
+    "alias": "east-way-gourmet-new-york",
+    "name": "East Way Gourmet",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ykrumegg-taV1ZHp4RHijQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/east-way-gourmet-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 13,
+    "categories": [
+      { "alias": "sandwiches", "title": "Sandwiches" },
+      { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" },
+      { "alias": "delis", "title": "Delis" }
+    ],
+    "rating": 4.4,
+    "coordinates": { "latitude": 40.7346609, "longitude": -73.985973 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "169 3rd Ave",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10003",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["169 3rd Ave", "New York, NY 10003"]
+    },
+    "phone": "+12122603859",
+    "display_phone": "(212) 260-3859",
+    "distance": 497.52331416509656,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 0 },
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 1 },
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 2 },
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 3 },
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 4 },
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 5 },
+          { "is_overnight": false, "start": "0600", "end": "2200", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "http://eastwayon3rd.com/uploads/detail/pdf_menu/75/Menu_East_Way_Gourmet.pdf",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "2HwB0HsQP6eeoI5FnJZGcA",
+    "alias": "ny-grill-and-deli-new-york",
+    "name": "NY Grill & Deli",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/HQY3-3MRfQyavJjyeMQYFw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/ny-grill-and-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 44,
+    "categories": [
+      { "alias": "salad", "title": "Salad" },
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "juicebars", "title": "Juice Bars & Smoothies" }
+    ],
+    "rating": 3.3,
+    "coordinates": {
+      "latitude": 40.7290190124722,
+      "longitude": -73.9814085513353
+    },
+    "transactions": ["pickup", "delivery"],
+    "location": {
+      "address1": "191 Ave A",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["191 Ave A", "New York, NY 10009"]
+    },
+    "phone": "+12122287878",
+    "display_phone": "(212) 228-7878",
+    "distance": 274.77732005891266,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 0 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 1 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 2 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 3 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 4 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 5 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "UmY9dyGOclJ0tGbn1IozlA",
+    "alias": "zaragoza-mexican-deli-and-grocery-new-york",
+    "name": "Zaragoza Mexican Deli & Grocery",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dF25V0loqzHjvGNHU_eqqA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/zaragoza-mexican-deli-and-grocery-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 346,
+    "categories": [
+      { "alias": "grocery", "title": "Grocery" },
+      { "alias": "delis", "title": "Delis" }
+    ],
+    "rating": 4.2,
+    "coordinates": {
+      "latitude": 40.73002829929698,
+      "longitude": -73.98085053337881
+    },
+    "transactions": ["pickup"],
+    "price": "$",
+    "location": {
+      "address1": "215 Ave A",
+      "address2": null,
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["215 Ave A", "New York, NY 10009"]
+    },
+    "phone": "+12127809204",
+    "display_phone": "(212) 780-9204",
+    "distance": 181.16457769085247,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 0 },
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 1 },
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 2 },
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 3 },
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 4 },
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 5 },
+          { "is_overnight": false, "start": "1000", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "xiwnLiNhSlEN4CDcurqsLQ",
+    "alias": "2nd-ave-deli-new-york",
+    "name": "2nd Ave Deli",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/U-PqDF0UdiZF2XIWkHFang/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/2nd-ave-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 1498,
+    "categories": [
+      { "alias": "kosher", "title": "Kosher" },
+      { "alias": "sandwiches", "title": "Sandwiches" },
+      { "alias": "burgers", "title": "Burgers" }
+    ],
+    "rating": 3.9,
+    "coordinates": {
+      "latitude": 40.745222741725954,
+      "longitude": -73.97918210165679
+    },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "162 E 33rd St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10016",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["162 E 33rd St", "New York, NY 10016"]
+    },
+    "phone": "+12126899000",
+    "display_phone": "(212) 689-9000",
+    "distance": 1546.2254059072166,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 0 },
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 1 },
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 2 },
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 3 },
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 4 },
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 5 },
+          { "is_overnight": false, "start": "1100", "end": "2000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "http://www.2ndavedeli.com/wp-content/uploads/menus/dine-in.pdf",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "qRaBWmb6GS0Hx8HOr0Zr8w",
+    "alias": "optimum-gourmet-deli-new-york",
+    "name": "Optimum Gourmet Deli",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/UccgKmf_Vi7GbSIyeOG9SQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/optimum-gourmet-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 48,
+    "categories": [
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "bagels", "title": "Bagels" },
+      { "alias": "sandwiches", "title": "Sandwiches" }
+    ],
+    "rating": 4.6,
+    "coordinates": { "latitude": 40.717746, "longitude": -73.989686 },
+    "transactions": ["delivery"],
+    "price": "$",
+    "location": {
+      "address1": "243 Broome St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10002",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["243 Broome St", "New York, NY 10002"]
+    },
+    "phone": "+12124774400",
+    "display_phone": "(212) 477-4400",
+    "distance": 1662.0040355252074,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 0 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 1 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 2 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 3 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 4 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 5 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "cFM1EAM3A_qYhba8W31oZw",
+    "alias": "finest-deli-new-york-4",
+    "name": "Finest Deli",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4fwzrOQ44igBSzdXjOi2IA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/finest-deli-new-york-4?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 6,
+    "categories": [{ "alias": "delis", "title": "Delis" }],
+    "rating": 5,
+    "coordinates": {
+      "latitude": 40.72742212857575,
+      "longitude": -73.99971460661342
+    },
+    "transactions": ["pickup", "delivery"],
+    "location": {
+      "address1": "496 LaGuardia Pl",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "zip_code": "10012",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["496 LaGuardia Pl", "New York, NY 10012"]
+    },
+    "phone": "",
+    "display_phone": "",
+    "distance": 1570.1297456397392,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 0 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 1 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 2 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 3 },
+          { "is_overnight": true, "start": "0600", "end": "0300", "day": 4 },
+          { "is_overnight": true, "start": "0600", "end": "0300", "day": 5 },
+          { "is_overnight": true, "start": "0700", "end": "0200", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "3J3PMzzfXR0-SXJOQFnZpQ",
+    "alias": "east-village-meat-market-new-york",
+    "name": "East Village Meat Market",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/OLnntqzrmhjbBw_VFDgE_g/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/east-village-meat-market-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 123,
+    "categories": [{ "alias": "meats", "title": "Meat Shops" }],
+    "rating": 4.6,
+    "coordinates": { "latitude": 40.729122, "longitude": -73.987731 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "139 2nd Ave",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10003",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["139 2nd Ave", "New York, NY 10003"]
+    },
+    "phone": "+12122285590",
+    "display_phone": "(212) 228-5590",
+    "distance": 565.3373877261633,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 0 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 1 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 2 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 3 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 4 },
+          { "is_overnight": false, "start": "0800", "end": "1600", "day": 5 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "6q6WWGaO75PQkpWOQ2zzHQ",
+    "alias": "parisi-bakery-new-york-4",
+    "name": "Parisi Bakery",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/1hEDBKMSwywJY1dfVvQKNg/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/parisi-bakery-new-york-4?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 498,
+    "categories": [
+      { "alias": "bakeries", "title": "Bakeries" },
+      { "alias": "sandwiches", "title": "Sandwiches" },
+      { "alias": "delis", "title": "Delis" }
+    ],
+    "rating": 4.4,
+    "coordinates": { "latitude": 40.7211836, "longitude": -73.9954365 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "198 Mott St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10012",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["198 Mott St", "New York, NY 10012"]
+    },
+    "phone": "+12122266378",
+    "display_phone": "(212) 226-6378",
+    "distance": 1623.7429822228885,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0900", "end": "1600", "day": 0 },
+          { "is_overnight": false, "start": "0900", "end": "1600", "day": 1 },
+          { "is_overnight": false, "start": "0900", "end": "1600", "day": 2 },
+          { "is_overnight": false, "start": "0900", "end": "1600", "day": 3 },
+          { "is_overnight": false, "start": "0900", "end": "1600", "day": 4 },
+          { "is_overnight": false, "start": "0900", "end": "1600", "day": 5 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "https://www.parisibakery.com/parisi-bakery-deli-sandwiches/",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "QqVpY9s282CN-VP3zlJcQw",
+    "alias": "east-village-finest-deli-new-york",
+    "name": "East Village Finest Deli",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/NW6DEUuSUgybXvnjzGbDcA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/east-village-finest-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 22,
+    "categories": [
+      { "alias": "grocery", "title": "Grocery" },
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "wraps", "title": "Wraps" }
+    ],
+    "rating": 3.9,
+    "coordinates": {
+      "latitude": 40.723259711912455,
+      "longitude": -73.98278911095151
+    },
+    "transactions": ["pickup", "delivery"],
+    "price": "$",
+    "location": {
+      "address1": "50 Avenue B",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["50 Avenue B", "New York, NY 10009"]
+    },
+    "phone": "+12122608200",
+    "display_phone": "(212) 260-8200",
+    "distance": 915.8591114068062,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 0 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 1 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 2 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 3 },
+          { "is_overnight": true, "start": "0600", "end": "0100", "day": 4 },
+          { "is_overnight": true, "start": "0600", "end": "0100", "day": 5 },
+          { "is_overnight": false, "start": "0600", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "b7HJS28jv5hHSIYrd-apgQ",
+    "alias": "hamptons-fresh-deli-new-york",
+    "name": "Hamptons Fresh Deli",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/faznXJrX2ttq8nM_dW1-ow/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/hamptons-fresh-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 6,
+    "categories": [
+      { "alias": "juicebars", "title": "Juice Bars & Smoothies" },
+      { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" },
+      { "alias": "delis", "title": "Delis" }
+    ],
+    "rating": 3.8,
+    "coordinates": { "latitude": 40.730666, "longitude": -73.983404 },
+    "transactions": ["delivery"],
+    "location": {
+      "address1": "217 1st Ave",
+      "address2": null,
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10003",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["217 1st Ave", "New York, NY 10003"]
+    },
+    "phone": "+12124327700",
+    "display_phone": "(212) 432-7700",
+    "distance": 157.50952104159276,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 0 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 1 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 2 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 3 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 4 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 5 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "https://www.hamptonsfreshdeli.com/menu",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "l67R2c6Qc_E6YECxoBz8dw",
+    "alias": "wolfs-delicatessen-new-york",
+    "name": "Wolf's Delicatessen",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HcfgxmICwKwuBYSuwiFQyA/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/wolfs-delicatessen-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 1,
+    "categories": [{ "alias": "delis", "title": "Delis" }],
+    "rating": 5,
+    "coordinates": {
+      "latitude": 40.76425312115372,
+      "longitude": -73.97756779092498
+    },
+    "transactions": ["pickup"],
+    "location": {
+      "address1": "41 W 57th St Lbby",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10019",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["41 W 57th St Lbby", "New York, NY 10019"]
+    },
+    "phone": "+12128884100",
+    "display_phone": "(212) 888-4100",
+    "distance": 3663.6354432908797,
+    "business_hours": [],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "oi39VAwo4-KGm_gSkWPCsQ",
+    "alias": "tompkins-square-bagels-avenue-a-new-york",
+    "name": "Tompkins Square Bagels - Avenue A",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HZX4tF9UCj1fMmyi50HU0Q/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/tompkins-square-bagels-avenue-a-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 1732,
+    "categories": [{ "alias": "bagels", "title": "Bagels" }],
+    "rating": 4.2,
+    "coordinates": { "latitude": 40.72823, "longitude": -73.9823 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$$",
+    "location": {
+      "address1": "165 Avenue A",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["165 Avenue A", "New York, NY 10009"]
+    },
+    "phone": "+16463516520",
+    "display_phone": "(646) 351-6520",
+    "distance": 361.8837453115089,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 0 },
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 1 },
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 2 },
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 3 },
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 4 },
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 5 },
+          { "is_overnight": false, "start": "0700", "end": "1700", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "http://tompkinssquarebagels.com/phone/menu.html",
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "jiFEVy4jcwtpFgAeJA25cA",
+    "alias": "greenland-gourmet-deli-new-york",
+    "name": "Greenland Gourmet Deli",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/tTI6FGlKpmXJGWEAivNDuw/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/greenland-gourmet-deli-new-york?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 2,
+    "categories": [
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "convenience", "title": "Convenience Stores" }
+    ],
+    "rating": 5,
+    "coordinates": {
+      "latitude": 40.72580416218219,
+      "longitude": -73.97752042871795
+    },
+    "transactions": ["pickup", "delivery"],
+    "location": {
+      "address1": "158 Loisaida Ave",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["158 Loisaida Ave", "New York, NY 10009"]
+    },
+    "phone": "",
+    "display_phone": "",
+    "distance": 728.1421600179898,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 0 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 1 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 2 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 3 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 4 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 5 },
+          { "is_overnight": true, "start": "0000", "end": "0000", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": null,
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  },
+  {
+    "id": "eJzVEVIHql5Vyi0jNxT0Xg",
+    "alias": "santa-barbara-deli-manhattan",
+    "name": "Santa Barbara Deli",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/amm4Kv7tx_SsSBOAEnpoFQ/o.jpg",
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/santa-barbara-deli-manhattan?adjust_creative=JYD76SmnxEX58unWQnyhnA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JYD76SmnxEX58unWQnyhnA",
+    "review_count": 25,
+    "categories": [
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" },
+      { "alias": "sandwiches", "title": "Sandwiches" }
+    ],
+    "rating": 3.9,
+    "coordinates": { "latitude": 40.7282296, "longitude": -73.9791262 },
+    "transactions": ["pickup", "delivery"],
+    "price": "$",
+    "location": {
+      "address1": "551 E 12th St",
+      "address2": null,
+      "address3": "",
+      "city": "Manhattan",
+      "zip_code": "10009",
+      "country": "US",
+      "state": "NY",
+      "display_address": ["551 E 12th St", "Manhattan, NY 10009"]
+    },
+    "phone": "+12122541732",
+    "display_phone": "(212) 254-1732",
+    "distance": 427.3715391375271,
+    "business_hours": [
+      {
+        "open": [
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 0 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 1 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 2 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 3 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 4 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 5 },
+          { "is_overnight": true, "start": "0600", "end": "0200", "day": 6 }
+        ],
+        "hours_type": "REGULAR",
+        "is_open_now": true
+      }
+    ],
+    "attributes": {
+      "business_temp_closed": null,
+      "menu_url": "https://santabarbaradeliles.com/order",
+      "open24_hours": null,
+      "waitlist_reservation": null
+    }
+  }
+]

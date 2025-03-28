@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Papaya & Pig Ear Salad - Goi Du Du",
+    "price": 18,
+    "ingredient": [
+      "Papaya",
+      "watercress",
+      "pork",
+      "herbs",
+      "peanuts",
+      "sweet soy dressing"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Poached Shrimp Salad - Goi Tom",
+    "price": 17,
+    "ingredient": [
+      "Cabbage",
+      "grapefruit",
+      "herbs",
+      "candied cashews",
+      "coconut-lime dressing",
+      "vegetable"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Sautéed Clams - Ngao Xao",
+    "price": 19,
+    "ingredient": ["Clams", "tomatoes", "garlic", "Thai basil", "breadstick"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Summer Rolls - Goi Cuon",
+    "price": 12,
+    "ingredient": [
+      "Rice paper",
+      "cucumber",
+      "lettuce",
+      "mint",
+      "basil",
+      "peanut-hoisin sauce",
+      "vegetable"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Crispy Spring Rolls - Nem Ran",
+    "price": 12,
+    "ingredient": ["Crab", "pork", "nuoc cham", "herbs", "seafood"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Lemongrass Chicken Wings - Canh Ga Chien",
+    "price": 19,
+    "ingredient": [
+      "chicken",
+      "fish sauce",
+      "palm sugar",
+      "chili",
+      "lemongrass",
+      "jalapenos"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Grilled Lamb Meatballs - Cuu La Lot",
+    "price": 18,
+    "ingredient": ["Lamb", "banh hoi noodles", "lettuce", "herbs"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Grilled Shishito Peppers",
+    "price": 11,
+    "ingredient": ["vegetable", "lime"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Morning Glory - Rau Muong",
+    "price": 12,
+    "ingredient": ["vegetable", "fish sauce"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Spicy Garlic Cauliflower - Sup Lo Cay",
+    "price": 13,
+    "ingredient": ["vegetable", "Chili butter", "fish sauce", "lime"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Classic Hanoi Style Beef - Pho Bac",
+    "price": 19,
+    "ingredient": ["Beef broth", "beef", "oxtail", "tendon"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "House Special - Dac Biet",
+    "price": 26,
+    "ingredient": ["Beef broth", "beef", "brisket", "oxtail", "bone marrow"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Chicken - Pho Ga",
+    "price": 17,
+    "ingredient": ["chicken"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Vegetarian - Pho Chay",
+    "price": 18,
+    "ingredient": [
+      "Mushroom broth",
+      "leafy greens",
+      "cauliflower",
+      "mixed mushrooms",
+      "tofu",
+      "vegetable"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Grilled Pork Noodles - Bun Cha Ha Noi",
+    "price": 24,
+    "ingredient": [
+      "pork",
+      "betel-wrapped pork meatballs",
+      "crab spring rolls",
+      "pickled green papaya",
+      "rice vermicelli",
+      "smoky broth"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Shaking Beef - Bo Luc Lac",
+    "price": 36,
+    "ingredient": [
+      "beef",
+      "garlic butter soy",
+      "bone marrow",
+      "watercress salad",
+      "steamed rice"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Braised Beef Banh Mi",
+    "price": 18,
+    "ingredient": [
+      "beef",
+      "hoisin caramelized onions",
+      "chili sauce",
+      "cilantro",
+      "red onion",
+      "baguette"
+    ],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Pho Broth",
+    "price": 6,
+    "ingredient": ["Beef", "chicken", "vegetarian"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Shrimp Chips - Banh Phong Tom",
+    "price": 2.25,
+    "ingredient": ["Chili salt"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Steamed Rice - Com",
+    "price": 2.5,
+    "ingredient": ["Rice"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  },
+  {
+    "name": "Roasted Bone Marrow",
+    "price": 9,
+    "ingredient": ["Bone marrow"],
+    "restaurantID": "bZQryeTD6hIsT6lSUxzSSw"
+  }
+]

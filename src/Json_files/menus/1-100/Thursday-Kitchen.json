@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Heirloom Tomato",
+    "price": 11,
+    "ingredient": ["tomato", "ricotta", "herb vinaigrette", "vegetable"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Plantain",
+    "price": 12,
+    "ingredient": ["plantain", "cheese", "cilantro", "vegetable"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Edamame Dumpling",
+    "price": 12,
+    "ingredient": [
+      "dumpling",
+      "truffle oil",
+      "green pepper",
+      "parmigiano",
+      "vegetable"
+    ],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Ugly Potato",
+    "price": 12,
+    "ingredient": ["potato", "cheese", "smoky bbq sauce", "vegetable"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Chilaquiles",
+    "price": 12,
+    "ingredient": ["tortilla", "avocado", "salsa", "vegetable"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Asparagus",
+    "price": 12,
+    "ingredient": ["asparagus", "cheese", "red pepper", "lemon", "vegetable"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Soft Shell Crab",
+    "price": 15,
+    "ingredient": ["soft shell crab", "batter", "vegetable", "seafood"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Kimchi Paella",
+    "price": 15,
+    "ingredient": ["shrimp", "saffron", "kimchi", "seafood"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Tuna Tartare Taco",
+    "price": 12,
+    "ingredient": ["tuna", "chipotle mayo", "yuzu cream", "seafood", "taco"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Korean Popcorn Chicken",
+    "price": 15,
+    "ingredient": ["chicken", "crispy", "sweet sauce", "spicy sauce"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Steak",
+    "price": 17,
+    "ingredient": ["steak", "garlic", "grits"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Duck Confit Empanada",
+    "price": 14,
+    "ingredient": ["duck", "empanada", "cumin", "pickled cucumber"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Lucky Noodle",
+    "price": 14,
+    "ingredient": ["noodle", "spicy", "fennel", "lime", "yogurt"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Truffle Mac & Cheese",
+    "price": 14,
+    "ingredient": ["macaroni", "cheese", "broccoli", "celery"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Gnocchi",
+    "price": 14,
+    "ingredient": ["gnocchi", "chili", "garlic", "seaweed", "vegetable"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Bread Pudding",
+    "price": 11,
+    "ingredient": ["bread", "blueberry", "vanilla", "cream"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  },
+  {
+    "name": "Popcorn Ice Cream",
+    "price": 11,
+    "ingredient": ["popcorn", "ice cream", "caramel"],
+    "restaurantID": "fVbUVAiLiGgLA_nxBFxyww"
+  }
+]

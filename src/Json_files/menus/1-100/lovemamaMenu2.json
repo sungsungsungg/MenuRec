@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Ka Prao Basil Sauce",
+    "price": 14,
+    "ingredient": ["basil"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Cashew Smoked Chilli",
+    "price": 14,
+    "ingredient": ["cashew", "chili paste"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Tofu Mixed Vegetable",
+    "price": 14,
+    "ingredient": ["tofu", "vegetable"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Roti",
+    "price": 4,
+    "ingredient": ["flatbread"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Thai Jasmine Rice",
+    "price": 3,
+    "ingredient": ["rice"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Sticky Coconut Rice",
+    "price": 3,
+    "ingredient": ["rice", "coconut"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Coconut Flavored Rice",
+    "price": 3,
+    "ingredient": ["roll"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Mango Sticky Rice Coconut Cream",
+    "price": 8,
+    "ingredient": ["rice", "mango", "cream"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Viet Iced Coffee",
+    "price": 5,
+    "ingredient": ["coffee", "milk", "ice"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Viet Style Hot Coffee",
+    "price": 5,
+    "ingredient": ["coffee", "milk"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Fresh Pineapple Smoothie",
+    "price": 5,
+    "ingredient": ["pineapple"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Passion Fruits Smoothie",
+    "price": 5,
+    "ingredient": ["passion fruit"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Calamansi Honey Jasmine Tea",
+    "price": 5,
+    "ingredient": ["tea", "honey", "calamansi"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Fresh Mango Smoothie",
+    "price": 5,
+    "ingredient": ["mango", "milk"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Hand Pulled Milk Tea",
+    "price": 5,
+    "ingredient": ["tea", "milk"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Fresh Coconut Juice",
+    "price": 6,
+    "ingredient": ["coconut"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Spring Water",
+    "price": 2,
+    "ingredient": ["water"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Thai Iced Tea",
+    "price": 5,
+    "ingredient": ["tea", "ice"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Black Tea Bubble Tea",
+    "price": 5,
+    "ingredient": ["tea", "milk", "pearls"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Taro Bubble Tea",
+    "price": 5,
+    "ingredient": ["taro", "milk", "pearls"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Hot Oolong Tea",
+    "price": 2,
+    "ingredient": ["tea"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Soda Can",
+    "price": 2,
+    "ingredient": ["soda"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Hot Green Tea",
+    "price": 2,
+    "ingredient": ["tea"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Lunch Combo",
+    "price": 12,
+    "ingredient": ["appetizer", "entree"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Uncle Plump's Dumplings (6)",
+    "price": 7,
+    "ingredient": ["meat", "dumpling"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Curry Coconut Soup",
+    "price": 7,
+    "ingredient": ["chicken", "tofu", "soup"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Vietnam Style Meat Dumplings (6)",
+    "price": 7,
+    "ingredient": ["meat", "dumpling"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Grilled Chicken Rice",
+    "price": 13,
+    "ingredient": ["chicken", "rice"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "BBQ Char Siu Bun (2pcs)",
+    "price": 7,
+    "ingredient": ["chicken", "pork", "bun"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Shrimp Summer Roll (2)",
+    "price": 8,
+    "ingredient": ["shrimp", "roll"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Honey Pork Chop",
+    "price": 13,
+    "ingredient": ["pork"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Thai Fried Chicken Wings (3pcs)",
+    "price": 8,
+    "ingredient": ["chicken"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Edamame with Sea Salt",
+    "price": 7,
+    "ingredient": ["edamame", "vegetable"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Thai Dumplings (4pcs)",
+    "price": 7,
+    "ingredient": ["meat", "dumpling"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  },
+  {
+    "name": "Fresh Summer Roll (2pcs)",
+    "price": 8,
+    "ingredient": ["lettuce", "mint", "tofu", "sauce", "vegetable"],
+    "restaurantID": "jjJc_CrkB2HodEinB6cWww"
+  }
+]
