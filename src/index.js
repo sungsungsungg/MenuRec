@@ -4,6 +4,8 @@ import cors from 'cors';
 import env from "dotenv";
 import path from "path";
 // Use CORS middleware to allow requests from port 5173
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
 
 
@@ -19,6 +21,10 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'src', 'components', 'build')));
