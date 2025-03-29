@@ -82,11 +82,11 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
   const [address, setAddress] = useState(getCookieAddress() || "");
 
   useEffect(()=>{
-    if(selectedAddress.locality){
-      setCookieAddress(selectedAddress);
-      setAddress(selectedAddress);
+    if(formData.locality){
+      setCookieAddress(formData.locality);
+      setAddress(formData.locality)
     }
-  },[selectedAddress]);
+  },[formData.locality]);
 
 
 

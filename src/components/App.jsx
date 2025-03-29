@@ -33,6 +33,7 @@ function App() {
     coordinates: {lat: 40.730387, lng: -73.9825791},
     sortBy: "rating",
     changed: 0,
+    locality: "",
   });
 
   const [addressData, setAddressData] = useState({
@@ -84,6 +85,7 @@ function App() {
 
   const handleAddressSelect = (updatedAddress) => {
     setSelectedAddress(updatedAddress);
+    setFormData((prev)=>({...prev, locality: selectedAddress.locality}));
   };
 
   function createList(restaurant_list){
