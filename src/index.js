@@ -20,32 +20,49 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static("public"));
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+let db;
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'dist')));
-  
+
     // Catch-all handler for any unmatched routes (so React handles routing)
     app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+        res.sendFile(path.join(__dirname, 'dist', 'index.html'));
     });
-  }
 
-const db = new pg.Client({
-    connectionString: process.env.DATABASE_URL,
-    ssl:{
-        rejectUnauthorized: false
-    },
-    // user: process.env.PG_USER,
-    // password: process.env.PG_PASSWORD,
-    // database: process.env.PG_DATABASE,
-    // host: process.env.PG_HOST,
-    // port: process.env.PG_PORT,
-  });
+    db = new pg.Client({
+        connectionString: process.env.DATABASE_URL,
+        ssl:{
+            rejectUnauthorized: false
+        },});
+
+}else{
+    app.use(express.static("public"));
+    db = new pg.Client({
+        user: process.env.PG_USER,
+        password: process.env.PG_PASSWORD,
+        database: process.env.PG_DATABASE,
+        host: process.env.PG_HOST,
+        port: process.env.PG_PORT,
+      });
+}
+
+// const db = new pg.Client({
+//     connectionString: process.env.DATABASE_URL,
+//     ssl:{
+//         rejectUnauthorized: false
+//     },
+//     // user: process.env.PG_USER,
+//     // password: process.env.PG_PASSWORD,
+//     // database: process.env.PG_DATABASE,
+//     // host: process.env.PG_HOST,
+//     // port: process.env.PG_PORT,
+//   });
   
 db.connect();
 
