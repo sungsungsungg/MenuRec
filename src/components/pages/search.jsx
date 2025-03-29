@@ -21,71 +21,33 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
 
   const navigateToHome = () => {
-    if(getCookie()){
-      navigate('/');  // Navigate to the other page
-    }
+    // if(getCookie()){
+      navigate('/');  
+    // }
   };
 
   const setCookieAddress = (add) => {
-    // console.log("cookie set: ", JSON.stringify(add));
     Cookies.set('addressCookie',JSON.stringify(add),{expires:1});
   }
   const getCookieAddress = () => {
     const cookieValue = Cookies.get('addressCookie');
-    // console.log("Cookie Address: ", cookieValue);
     return cookieValue?JSON.parse(cookieValue):null;
   }
 
+  
 
-  const setCookie = (coord) => {
-    // console.log("cookie set: ", JSON.stringify(coord));
-    Cookies.set('userCookie',JSON.stringify(coord),{expires:1});
-  }
-
-  const getCookie = () => {
-    const cookieValue = Cookies.get('userCookie');
-    return cookieValue?JSON.parse(cookieValue):null;
-  }
-
-  // const [coord,setCoord] = useState(getCookie()||{});
-
-  // useEffect(()=>{
-  //   if(!rendered.current){
-  //     if(!getCookie()){
-  //       navigateToHome();
-  //     }else{
-  //       setCoord(getCookie());
-  //       // console.log(coordinates);
-  //     }
-  //   }else{
-  //     if(coordinates){
-  //       setCookie(coordinates);
-  //     }
-      
-  //   }
-  //   rendered.current = true;
-  // },[coordinates]);
 
   const [address, setAddress] = useState(getCookieAddress() || selectedAddress || "");
 
   useEffect(()=>{
-    // setCoord(getCookie()||{});
     if(getCookieAddress()){
-      console.log(getCookieAddress());
       setAddress(getCookieAddress());
     }else if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
     }
-    // setAddress(getCookieAddress()||"");
   },[])
 
-  // useEffect(()=>{
-  //   if(coordinates&&coordinates.lat){
-  //     setCoord(coordinates);
-  //     setCookie(coordinates);
-  //   }
-  // })
 
 
 
@@ -93,7 +55,6 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
-      console.log(selectedAddress);
     }
   },[selectedAddress]);
 
