@@ -33,7 +33,6 @@ function App() {
     coordinates: {lat: 40.730387, lng: -73.9825791},
     sortBy: "rating",
     changed: 0,
-    locality: "",
   });
 
   const [addressData, setAddressData] = useState({
@@ -48,6 +47,7 @@ function App() {
     state: "",
     postalCode: "",
     country: "",
+    coordinates: {},
   });
 
   const [coordinates, setCoordinates] = useState(null);
@@ -85,7 +85,6 @@ function App() {
 
   const handleAddressSelect = (updatedAddress) => {
     setSelectedAddress(updatedAddress);
-    setFormData((prev)=>({...prev, locality: selectedAddress.locality}));
   };
 
   function createList(restaurant_list){
@@ -159,6 +158,10 @@ useEffect(()=>{
         loadGoogleMapsScript("AIzaSyAPFVx-HAzLMMsUFGMo0qXq46GfZWjaXdI") //TODO Hide API
           .then(() => getCoordinates(addressToGeocode))
           .then((coords) => {setCoordinates(coords);
+            setSelectedAddress((prev)=>({
+              ...prev,
+              coordinates: coords,
+            }))
             setFormData((prev)=>({
               ...prev,
               changed: prev.changed+1,

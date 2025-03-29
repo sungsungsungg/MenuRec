@@ -47,7 +47,7 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     return cookieValue?JSON.parse(cookieValue):null;
   }
 
-  const [coord,setCoord] = useState(getCookie()||{});
+  // const [coord,setCoord] = useState(getCookie()||{});
 
   // useEffect(()=>{
   //   if(!rendered.current){
@@ -68,25 +68,25 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
 
   useEffect(()=>{
-    setCoord(getCookie()||{});
+    // setCoord(getCookie()||{});
     setAddress(getCookieAddress()||"");
   },[])
 
-  useEffect(()=>{
-    if(coordinates&&coordinates.lat){
-      setCoord(coordinates);
-      setCookie(coordinates);
-    }
-  })
+  // useEffect(()=>{
+  //   if(coordinates&&coordinates.lat){
+  //     setCoord(coordinates);
+  //     setCookie(coordinates);
+  //   }
+  // })
 
   const [address, setAddress] = useState(getCookieAddress() || "");
 
   useEffect(()=>{
-    if(formData.locality){
-      setCookieAddress(formData.locality);
-      setAddress(formData.locality)
+    if(selectedAddress.locality){
+      setCookieAddress(selectedAddress);
+      setAddress(selectedAddress);
     }
-  },[formData.locality]);
+  },[selectedAddress]);
 
 
 
@@ -99,7 +99,7 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
       restaurant_name={restaurant_list.restaurant_name}
       location={restaurant_list.location}
       url={restaurant_list.url}
-      distance = {getDistance(coord,restaurant_list.coordinates) ? (getDistance(coord,restaurant_list.coordinates).toFixed(2) +" mi"):"Set your location"}
+      distance = {getDistance(address.coordinates,restaurant_list.coordinates) ? (getDistance(address.coordinates,restaurant_list.coordinates).toFixed(2) +" mi"):"Set your location"}
       image={restaurant_list.image_url}
     />
   );
