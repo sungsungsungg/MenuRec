@@ -71,7 +71,11 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
   useEffect(()=>{
     // setCoord(getCookie()||{});
     if(getCookieAddress()){
+      console.log(getCookieAddress());
       setAddress(getCookieAddress());
+    }else if(selectedAddress.locality){
+      setCookieAddress(selectedAddress);
+      setAddress(selectedAddress);
     }
     // setAddress(getCookieAddress()||"");
   },[])
@@ -89,8 +93,9 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
+      console.log(selectedAddress);
     }
-  },[selectedAddress.locality]);
+  },[selectedAddress]);
 
 
 
