@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates, selectedAddress }) {
 
-  const rendered = useRef(false);
+  // const rendered = useRef(false);
 
   const navigate = useNavigate();
 
@@ -49,26 +49,35 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
   const [coord,setCoord] = useState(getCookie()||{});
 
-  useEffect(()=>{
-    if(!rendered.current){
-      if(!getCookie()){
-        navigateToHome();
-      }else{
-        setCoord(getCookie());
-        // console.log(coordinates);
-      }
-    }else{
-      if(coordinates){
-        setCookie(coordinates);
-      }
+  // useEffect(()=>{
+  //   if(!rendered.current){
+  //     if(!getCookie()){
+  //       navigateToHome();
+  //     }else{
+  //       setCoord(getCookie());
+  //       // console.log(coordinates);
+  //     }
+  //   }else{
+  //     if(coordinates){
+  //       setCookie(coordinates);
+  //     }
       
-    }
-    rendered.current = true;
-  },[coordinates]);
+  //   }
+  //   rendered.current = true;
+  // },[coordinates]);
+
 
   useEffect(()=>{
     setCoord(getCookie()||{});
+    setAddress(getCookieAddress()||"");
   },[])
+
+  useEffect(()=>{
+    if(coordinates&&coordinates.lat){
+      setCoord(coordinates);
+      setCookie(coordinates);
+    }
+  })
 
   const [address, setAddress] = useState(getCookieAddress() || "");
 
@@ -79,10 +88,6 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     }
   },[selectedAddress]);
 
-
-  useEffect(()=>{
-    setAddress(getCookieAddress()||"");
-  },[])
 
 
   const createList = (restaurant_list) => (
