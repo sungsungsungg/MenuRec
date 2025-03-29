@@ -47,12 +47,14 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     return cookieValue?JSON.parse(cookieValue):null;
   }
 
+  const [coord,setCoord] = useState(getCookie()||{});
+
   useEffect(()=>{
     if(!rendered.current){
       if(!getCookie()){
         navigateToHome();
       }else{
-        coordinates = getCookie();
+        setCoord(getCookie());
         // console.log(coordinates);
       }
     }else{
@@ -63,6 +65,10 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     }
     rendered.current = true;
   },[coordinates]);
+
+  useEffect(()=>{
+    setCoord(getCookie()||{});
+  },[])
 
   const [address, setAddress] = useState(getCookieAddress() || "");
 
@@ -88,7 +94,7 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
       restaurant_name={restaurant_list.restaurant_name}
       location={restaurant_list.location}
       url={restaurant_list.url}
-      distance = {getDistance(getCookie(),restaurant_list.coordinates) ? (getDistance(getCookie(),restaurant_list.coordinates).toFixed(2) +" mi"):"Set your location"}
+      distance = {getDistance(coord,restaurant_list.coordinates) ? (getDistance(coord,restaurant_list.coordinates).toFixed(2) +" mi"):"Set your location"}
       image={restaurant_list.image_url}
     />
   );
