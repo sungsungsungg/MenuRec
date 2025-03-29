@@ -27,11 +27,11 @@ const __dirname = dirname(__filename);
 
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'src', 'components', 'build')));
+    app.use(express.static(path.join(__dirname, 'dist')));
   
     // Catch-all handler for any unmatched routes (so React handles routing)
     app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'src', 'components', 'build', 'index.html'));
+      res.sendFile(path.join(__dirname, 'dist', 'index.html'));
     });
   }
 
