@@ -58,6 +58,12 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     rendered.current = true;
   },[coordinates]);
 
+  useEffect(()=>{
+      setCookieAddress(selectedAddress);
+  },[selectedAddress]);
+
+
+
 
 
   const createList = (restaurant_list) => (
@@ -76,7 +82,7 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
   return (
     <StrictMode>
-      <Header selectedAddress={getCookieAddress()}/>
+      <Header selectedAddress={getCookieAddress()?getCookieAddress():""}/>
       <div className="search">
       <form onSubmit={handleSubmit}>
         <Category onChange={handleChange}/>
