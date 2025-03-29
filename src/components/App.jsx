@@ -17,6 +17,11 @@ import Header from "./marks/header.jsx"
 
 function App() {
 
+  const apiUrl = process.env.NODE_ENV === 'production' 
+  ? 'https://menuniversity-eb11d8199881.herokuapp.com/api/' 
+  : 'http://localhost:3000/api/'; // Local development
+
+
   let started = 0;
 
   const [formData, setFormData] = useState({
@@ -89,7 +94,7 @@ function App() {
 
 
   const addItem = () => {
-    axios.post('http://localhost:3000/api/items', formData)
+    axios.post(`${apiUrl}items`, formData)
       .then(response => {
         setRecData(response.data);
         setFormData((prev)=>({
@@ -129,7 +134,7 @@ useEffect(()=>{
 },[formData.category,formData.ingredient]);
 
   const setAddress = async ()=>{
-    await axios.post('http://localhost:3000/api/address', selectedAddress)
+    await axios.post(`${apiUrl}address`, selectedAddress)
       .then(response => {
         if(response.data.selectedAddress.location){
           setAddressData(response.data);
