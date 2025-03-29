@@ -19,6 +19,7 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
   const [menuPage, setMenuPage] = useState(0);
 
+
   const navigateToHome = () => {
     if(getCookie()){
       navigate('/');  // Navigate to the other page
@@ -31,8 +32,10 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
   }
   const getCookieAddress = () => {
     const cookieValue = Cookies.get('addressCookie');
+    // console.log("Cookie Address: ", cookieValue);
     return cookieValue?JSON.parse(cookieValue):null;
   }
+
 
   const setCookie = (coord) => {
     // console.log("cookie set: ", JSON.stringify(coord));
@@ -61,14 +64,19 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     rendered.current = true;
   },[coordinates]);
 
+  const [address, setAddress] = useState(getCookieAddress() || "");
+
   useEffect(()=>{
-    if(selectedAddress){
+    if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
+      setAddress(selectedAddress);
     }
   },[selectedAddress]);
 
 
-
+  useEffect(()=>{
+    setAddress(getCookieAddress()||"");
+  },[])
 
 
   const createList = (restaurant_list) => (
@@ -99,7 +107,10 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
   return (
     <StrictMode>
-      <Header selectedAddress={getCookieAddress()?getCookieAddress():""}/>
+      <Header selectedAddress={address}/>
+
+
+      
       <div className="search">
       <form onSubmit={handleSubmit}>
         <Category onChange={handleChange}/>
@@ -110,15 +121,16 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
       
       
-      <div>
+      <div className="container">
+        {recData.item?<button className="pageButton" onClick={previousPage}> &lt;</button>:null}
+        {recData.item?<button className= "pageButton" onClick={nextPage}>&gt;</button>:null}
+      </div>
         <br/>
         {recData.item?<SortBy onChange={handleChange} />:null}
         <br/>
 
         {recData.item ? recData.item.slice(menuPage*10,menuPage*10+10).map(createList) : "Select your option"}
-      </div>
-      {recData.item?<button onClick={previousPage}> &lt;</button>:null}
-      {recData.item?<button onClick={nextPage}>&gt;</button>:null}
+      
     </div>
     
     </StrictMode>

@@ -71,3 +71,15 @@ img{
     margin-right: 3em;
 }
 
+
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.pageButton{
+    margin: 0px 0.5em;
+}

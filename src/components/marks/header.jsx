@@ -22,7 +22,7 @@ function header({selectedAddress}){
                 {/* <button type="button" className="btn btn-primary">Sign-up</button> */}
             </div>
             </header>
-  </div>
+        </div>
     )
 
 }
