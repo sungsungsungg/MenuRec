@@ -101,12 +101,6 @@ async function getFoodList(search){
         if(search.minPrice){
             
             
-            // switch(search.price){
-            //     case "$": lowerBound = 0; upperBound = 15; break;
-            //     case "$$": lowerBound = 15; upperBound = 25; break;
-            //     case "$$$": lowerBound = 25; upperBound = 35; break;
-            //     case "$$$$": lowerBound = 35; upperBound = 100; break;
-            // }
             result = await db.query(
                 `SELECT *
                 FROM menu_items
