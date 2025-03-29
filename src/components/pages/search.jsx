@@ -16,6 +16,9 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
 
   const navigate = useNavigate();
 
+
+  const [menuPage, setMenuPage] = useState(0);
+
   const navigateToHome = () => {
     if(getCookie()){
       navigate('/');  // Navigate to the other page
@@ -50,14 +53,18 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
         // console.log(coordinates);
       }
     }else{
-      // console.log(coordinates);
-      setCookie(coordinates);
+      if(coordinates){
+        setCookie(coordinates);
+      }
+      
     }
     rendered.current = true;
   },[coordinates]);
 
   useEffect(()=>{
+    if(selectedAddress){
       setCookieAddress(selectedAddress);
+    }
   },[selectedAddress]);
 
 
@@ -78,6 +85,18 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     />
   );
 
+  function previousPage(){
+    if(menuPage>0){
+      setMenuPage((prev)=>prev-1);
+    }
+  }
+
+  function nextPage(){
+    if(menuPage<Math.floor(recData.item.length/10)){
+      setMenuPage((prev)=>prev+1);
+    }
+  }
+
   return (
     <StrictMode>
       <Header selectedAddress={getCookieAddress()?getCookieAddress():""}/>
@@ -89,12 +108,19 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
         <button type="submit">Apply</button>
       </form>
 
-      <br/>
-      {recData.item?<SortBy onChange={handleChange} />:null}
-      <br/>
+      
+      
+      <div>
+        <br/>
+        {recData.item?<SortBy onChange={handleChange} />:null}
+        <br/>
 
-      {recData.item ? recData.item.map(createList) : "Select your option"}
+        {recData.item ? recData.item.slice(menuPage*10,menuPage*10+10).map(createList) : "Select your option"}
+      </div>
+      {recData.item?<button onClick={previousPage}> &lt;</button>:null}
+      {recData.item?<button onClick={nextPage}>&gt;</button>:null}
     </div>
+    
     </StrictMode>
     
   );
