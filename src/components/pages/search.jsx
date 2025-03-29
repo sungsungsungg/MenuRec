@@ -47,13 +47,11 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
         navigateToHome();
       }else{
         coordinates = getCookie();
-        selectedAddress = getCookieAddress();
         // console.log(coordinates);
       }
     }else{
       // console.log(coordinates);
       setCookie(coordinates);
-      setCookieAddress(selectedAddress);
     }
     rendered.current = true;
   },[coordinates]);
