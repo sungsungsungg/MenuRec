@@ -27,7 +27,7 @@ const AddressSelection = ({ selectedAddress, onAddressSelect }) => {
         return;
       }
 
-      // Attach Autocomplete to the address input field
+      // Attach Autocomplete once script is loaded
       const autocomplete = new window.google.maps.places.Autocomplete(addressInputRef.current, {
         types: ["address"],
         fields: ["address_components", "geometry", "name"],

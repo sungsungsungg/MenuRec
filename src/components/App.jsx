@@ -86,6 +86,21 @@ function App() {
     setSelectedAddress(updatedAddress);
   };
 
+  function createList(restaurant_list){
+    // console.log(coordinates);
+    // console.log(restaurant_list.coordinates)
+    // console.log(getDistance(coordinates,restaurant_list.coordinates));
+    return (<RecList
+      key={restaurant_list.menu_id}
+      id={restaurant_list.menu_id}
+      price={"$ "+restaurant_list.price}
+      name={restaurant_list.name}
+      restaurant_name={restaurant_list.restaurant_name}
+      location={restaurant_list.location}
+      url = {restaurant_list.url}
+      distance = {getDistance(coordinates,restaurant_list.coordinates) ? (getDistance(coordinates,restaurant_list.coordinates).toFixed(2) +" mi"):"Set your location"}
+    />)
+  }
 
   const handleSubmit = (e)=>{
     e.preventDefault();
