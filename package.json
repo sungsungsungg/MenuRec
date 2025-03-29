@@ -10,7 +10,7 @@
     "start": "node src/index.js",
     "client": "npm run build --prefix src/components",
     "server": "node src/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "vite"
   },
   "dependencies": {
     "axios": "^1.7.9",

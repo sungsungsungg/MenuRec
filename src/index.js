@@ -36,11 +36,15 @@ if (process.env.NODE_ENV === 'production') {
   }
 
 const db = new pg.Client({
-    user: process.env.PG_USER,
-    password: process.env.PG_PASSWORD,
-    database: process.env.PG_DATABASE,
-    host: process.env.PG_HOST,
-    port: process.env.PG_PORT,
+    connectionString: process.env.DATABASE_URL,
+    ssl:{
+        rejectUnauthorized: false
+    },
+    // user: process.env.PG_USER,
+    // password: process.env.PG_PASSWORD,
+    // database: process.env.PG_DATABASE,
+    // host: process.env.PG_HOST,
+    // port: process.env.PG_PORT,
   });
   
 db.connect();
