@@ -66,10 +66,14 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
   //   rendered.current = true;
   // },[coordinates]);
 
+  const [address, setAddress] = useState(getCookieAddress() || selectedAddress || "");
 
   useEffect(()=>{
     // setCoord(getCookie()||{});
-    setAddress(getCookieAddress()||"");
+    if(getCookieAddress()){
+      setAddress(getCookieAddress());
+    }
+    // setAddress(getCookieAddress()||"");
   },[])
 
   // useEffect(()=>{
@@ -79,14 +83,14 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
   //   }
   // })
 
-  const [address, setAddress] = useState(getCookieAddress() || "");
+
 
   useEffect(()=>{
     if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
     }
-  },[selectedAddress]);
+  },[selectedAddress.locality]);
 
 
 
