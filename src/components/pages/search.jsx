@@ -40,14 +40,14 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
   const [address, setAddress] = useState(getCookieAddress() || selectedAddress || "");
 
   useEffect(()=>{
-    if(getCookieAddress()){
-      setAddress(getCookieAddress());
-      console.log("cookie address: ",getCookieAddress());
-      setSelectedAddress(getCookieAddress());
-    }else if(selectedAddress.locality){
+    if(selectedAddress.locality){
       console.log("update cookie: ",selectedAddress);
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
+    }else if(getCookieAddress()){
+      setAddress(getCookieAddress());
+      console.log("cookie address: ",getCookieAddress());
+      setSelectedAddress(getCookieAddress());
     }
   },[])
 
