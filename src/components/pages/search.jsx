@@ -10,7 +10,7 @@ import Cookies from 'js-cookie';
 import Header from "../marks/header.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates, selectedAddress }) {
+function SearchPage({ recData, handleSubmit, handleChange, coordinates, selectedAddress, setSelectedAddress }) {
 
   // const rendered = useRef(false);
 
@@ -42,7 +42,10 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
   useEffect(()=>{
     if(getCookieAddress()){
       setAddress(getCookieAddress());
+      // console.log("cookie address: ",getCookieAddress());
+      setSelectedAddress(getCookieAddress());
     }else if(selectedAddress.locality){
+      // console.log("update cookie: ",selectedAddress);
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
     }
@@ -55,6 +58,7 @@ function SearchPage({ formData, recData, handleSubmit, handleChange, coordinates
     if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
+      // console.log("update cookie2: ",selectedAddress);
     }
   },[selectedAddress]);
 

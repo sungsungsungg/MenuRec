@@ -70,18 +70,18 @@ db.connect();
 
 async function getFoodList(search){
     let result;
-    let sortBy = "";
+    // let sortBy = "";
     let lowerBound = parseInt(search.minPrice);
     let upperBound = parseInt(search.maxPrice);
 
-    if(search.sortBy){
-        switch(search.sortBy){
-            case "price": sortBy = " ORDER BY price ASC"; break;
-            case "reviews": sortBy = " ORDER BY review_count ASC"; break;
-            case "rating": sortBy = " ORDER BY rating ASC"; break;
-            case "distance": sortBy = ""; break;
-        }
-    }
+    // if(search.sortBy){
+    //     switch(search.sortBy){
+    //         case "price": sortBy = " ORDER BY price ASC"; break;
+    //         case "reviews": sortBy = " ORDER BY review_count ASC"; break;
+    //         case "rating": sortBy = " ORDER BY rating ASC"; break;
+    //         case "distance": sortBy = ""; break;
+    //     }
+    // }
     // console.log(search);
     console.log(search);
 
@@ -136,7 +136,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($5,$6) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy}
+                ) <= 4828.03; -- 3 miles in meters
                 ;`,[category,ingredient,lowerBound, upperBound, search.coordinates.lat, search.coordinates.lng]
             )
         }else{
@@ -156,7 +156,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($3,$4) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy}
+                ) <= 4828.03; -- 3 miles in meters
                 ; `,[category,ingredient, search.coordinates.lat,search.coordinates.lng]
             )
         }
@@ -187,7 +187,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($4,$5) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy}
+                ) <= 4828.03; -- 3 miles in meters
                 ;`,[category,lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
             )
         }else{
@@ -206,7 +206,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($2,$3) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy}
+                ) <= 4828.03; -- 3 miles in meters
                 ;`,[category, search.coordinates.lat,search.coordinates.lng]
             )
         }
@@ -233,7 +233,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($4,$5) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy};`,[ingredient,lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
+                ) <= 4828.03; -- 3 miles in meters;`,[ingredient,lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
             )
         }else{
             result = await db.query(
@@ -247,7 +247,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($2,$3) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy}`,[ingredient, search.coordinates.lat,search.coordinates.lng]
+                ) <= 4828.03; -- 3 miles in meters`,[ingredient, search.coordinates.lat,search.coordinates.lng]
             )
         }
     }else{
@@ -272,7 +272,7 @@ async function getFoodList(search){
                         (restaurants.coordinates->>'longitude')::double precision
                     ), 
                     ll_to_earth($3,$4) -- User's location
-                ) <= 4828.03; -- 3 miles in meters${sortBy};`,[lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
+                ) <= 4828.03; -- 3 miles in meters;`,[lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
             )
         }else{
             return result;

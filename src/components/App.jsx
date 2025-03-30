@@ -1,10 +1,4 @@
 import { useState, useEffect } from 'react'
-import Category from './options/Category.jsx'
-import Ingredient from "./options/Ingredient.jsx"
-import RecList from "./recList.jsx"
-import AddressSearch from "./addressSearch.jsx"
-import Price from "./options/Price.jsx"
-import SortBy from "./options/SortBy.jsx"
 import axios from "axios"
 import https from "https"
 import { loadGoogleMapsScript, getCoordinates, getDistance } from "./coordinate.js";
@@ -59,30 +53,35 @@ function App() {
     
     if(recData && recData.item){
       let sortedRecData = [];
-      sortedRecData = [...recData.item].sort((a,b)=> a.rating - b.rating);
-      setRecData({...recData, item: sortedRecData});
+
       switch(formData.sortBy){
         case "price":
           sortedRecData = [...recData.item].sort((a,b)=> a.price - b.price);
-          setRecData({...recData, item: sortedRecData});
+
           break;
         case "reviews":
-          sortedRecData = [...recData.item].sort((a,b)=> a.reviews - b.reviews);
-          setRecData({...recData, item: sortedRecData});
+          sortedRecData = [...recData.item].sort((a,b)=> a.review_count - b.review_count);
+
           break;
         case "rating": 
           sortedRecData = [...recData.item].sort((a,b)=> a.rating - b.rating);
-          setRecData({...recData, item: sortedRecData});
+
           break;
         case "distance":
-          if(coordinates){
-            sortedRecData = [...recData.item].sort((a,b)=> getDistance(coordinates,a.coordinates) - getDistance(coordinates,b.coordinates));
-            setRecData({...recData, item: sortedRecData});
+          if(selectedAddress.coordinates){
+            sortedRecData = [...recData.item].sort((a,b)=> getDistance(selectedAddress.coordinates,a.coordinates) - getDistance(selectedAddress.coordinates,b.coordinates));
+            
           }
           break;
+        default:
+          break;
+      }
+      if(sortedRecData.length >0){
+        setRecData({...recData, item: sortedRecData});
+      }
     }
-    }
-  },[formData.sortBy,formData.changed]);
+    // console.log(selectedAddress);
+  },[formData.sortBy,formData.changed, selectedAddress.coordinates]);
 
   const handleAddressSelect = (updatedAddress) => {
     setSelectedAddress(updatedAddress);
@@ -192,13 +191,12 @@ function App() {
           path="/search"
           element={
             <SearchPage
-              formData={formData}
-              setFormData={setFormData}
               recData={recData}
               handleSubmit={handleSubmit}
               handleChange={handleChange}
               coordinates={coordinates}
               selectedAddress={selectedAddress}
+              setSelectedAddress={setSelectedAddress}
             />
           }
         />
