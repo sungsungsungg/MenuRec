@@ -35,8 +35,28 @@ function HomePage({ selectedAddress, onAddressSelect, handleSubmitAddress }) {
 
         <br />
       </div>
+
+
+      <div className="bg-body-tertiary p-5 rounded">
+      <div className="col-sm-8 py-5 mx-auto">
+        <h1 className="display-5 fw-normal">Service Under Construction</h1>
+        <p className="fs-5">The service currently fetches only a small number of restaurants in the East Village of Manhattan. More restaurants will be added soon!
+          In the meantime, feel free to check out the developer's portfolio <a href="https://sungsungsungg.github.io/sung-portfolio/">here</a>!</p>
+        <p>Here is the list of restaurants available in the service: Lovemama, Hanoi House, Thursday Kitchen, Soothr.</p>
+        <p>
+        You can use the following addresses for trial:
+        <li>E 14th St, New York</li>
+        <li>490 2nd Ave, New York</li>
+
+
+
+        </p>
+    </div>
+    </div>
       
     </div>
+
+
   );
 }
 
