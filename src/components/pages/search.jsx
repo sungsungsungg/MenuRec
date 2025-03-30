@@ -12,7 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SearchPage({ recData, handleSubmit, handleChange, coordinates, selectedAddress, setSelectedAddress }) {
 
-  const rendered = useRef(false);
 
   const navigate = useNavigate();
 
@@ -47,12 +46,8 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
       // console.log("cookie address: ",getCookieAddress());
       setSelectedAddress(getCookieAddress());
     }else{
-      if(rendered.current){
         alert("Invalid Address");
         navigateToHome();
-      }else{
-        rendered.current = true;
-      }
       
     }
   },[])
