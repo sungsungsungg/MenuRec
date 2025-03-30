@@ -6,7 +6,7 @@ import HomePage from "./pages/home.jsx";
 import SearchPage from "./pages/search.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./marks/header.jsx"
-
+import Cookies from 'js-cookie';
 
 
 function App() {
@@ -18,23 +18,6 @@ function App() {
 
   let started = 0;
 
-  const [formData, setFormData] = useState({
-    category: "",
-    ingredient: "",
-    price: "None",
-    minPrice: "0",
-    maxPrice: "100",
-    coordinates: {lat: 40.730387, lng: -73.9825791},
-    sortBy: "rating",
-    changed: 0,
-  });
-
-  const [addressData, setAddressData] = useState({
-    selectedAddress: {}
-  })
-
-  const [recData, setRecData] = useState([]);
-
   const [selectedAddress, setSelectedAddress] = useState({
     location: "",
     locality: "",
@@ -43,10 +26,57 @@ function App() {
     country: "",
     coordinates: {},
   });
+  
+  const [formData, setFormData] = useState(getCookieForm()||{
+    category: "",
+    ingredient: "",
+    minPrice: "0",
+    maxPrice: "100",
+    coordinates: selectedAddress?.coordinates||{},
+    sortBy: "rating",
+    changed: 0,
+  });
+
+
+  const [addressData, setAddressData] = useState({
+    selectedAddress: {}
+  })
+
+  const [recData, setRecData] = useState([]);
+
+  
 
   const [coordinates, setCoordinates] = useState(null);
 
 
+  function setCookieForm(form){
+      Cookies.set('formCookie',JSON.stringify(form),{expires:1});
+    }
+  function getCookieForm(){
+    const cookieValue = Cookies.get('formCookie');
+    return cookieValue?JSON.parse(cookieValue):null;
+  }
+  
+  
+    useEffect(()=>{
+      if(getCookieForm()){
+        setFormData({...getCookieForm(), category: "", ingredient: "", minPrice: '0', maxPrice:"100", sortBy: "rating"});
+        // console.log("cookie address: ",getCookieAddress());
+        // setSelectedAddress(getCookieAddress());
+      }
+    },[])
+  
+  
+  
+  
+    useEffect(()=>{
+      if(formData){
+        setCookieForm(formData);
+        // console.log("update cookie2: ",selectedAddress);
+      }
+    },[formData]);
+
+  
 
 
   useEffect(()=>{
@@ -123,16 +153,6 @@ function App() {
     }
 }, [coordinates]); // Runs whenever coordinates update
 
-// useEffect(()=>{
-//   if(formData.changed>1){
-//     addItem();
-//   }else{
-//     setFormData((prev)=>({
-//       ...prev,
-//       changed: prev.changed+1
-//     }));
-//   }
-// },[formData.category,formData.ingredient]);
 
   const setAddress = async ()=>{
     await axios.post(`${apiUrl}address`, selectedAddress)

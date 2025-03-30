@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import react, {useEffect} from "react";
 
-function header({selectedAddress}){
+function header({address}){
 
     return(
         <div className="px-4 header">
@@ -13,7 +13,7 @@ function header({selectedAddress}){
             </div>
 
             <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/" className="nav-link px-2 link-secondary">{selectedAddress.locality}</a></li>
+                <li><a href="/" className="nav-link px-2 link-secondary">{address.locality}</a></li>
 
             </ul>
 

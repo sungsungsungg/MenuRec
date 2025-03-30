@@ -7,8 +7,10 @@ function HomePage({ selectedAddress, onAddressSelect, handleSubmitAddress }) {
   const navigate = useNavigate();
 
   const navigateToOtherPage = () => {
-    if(selectedAddress.location){
+    if(selectedAddress){
       navigate('/search');  // Navigate to the other page
+    }else{
+
     }
     
   };

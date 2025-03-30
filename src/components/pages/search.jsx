@@ -92,7 +92,7 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
 
   return (
     <StrictMode>
-      <Header selectedAddress={address}/>
+      <Header address={address}/>
 
 
       

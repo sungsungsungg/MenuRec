@@ -36,7 +36,7 @@ const AddressSelection = ({ selectedAddress, onAddressSelect }) => {
       autocomplete.addListener("place_changed", () => {
         const place = autocomplete.getPlace();
         if (!place.geometry) {
-          alert(`No details available for input: '${place.name}'`);
+          // alert(`No details available for input: '${place.name}'`);
           return;
         }
 
@@ -55,7 +55,7 @@ const AddressSelection = ({ selectedAddress, onAddressSelect }) => {
         onAddressSelect({
           ...selectedAddress,
           location: fullAddress, // Store the full address in location
-          locality: place.address_components[0].short_name,
+          locality: place.address_components[0].short_name||" ",
         });
       });
     }).catch((error) => {
