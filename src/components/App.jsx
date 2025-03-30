@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react'
 import axios from "axios"
-import https from "https"
 import { loadGoogleMapsScript, getCoordinates, getDistance } from "./coordinate.js";
 import HomePage from "./pages/home.jsx";
 import SearchPage from "./pages/search.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from "./marks/header.jsx"
 import Cookies from 'js-cookie';
-
+import { useNavigate } from 'react-router-dom';
 
 function App() {
 
+  
   const apiUrl = process.env.NODE_ENV === 'production' 
   ? 'https://menuniversity-eb11d8199881.herokuapp.com/api/' 
   : 'http://localhost:3000/api/'; // Local development
@@ -139,6 +138,8 @@ function App() {
       });
   };
 
+
+
   const handleSubmitAddress = (e) =>{
     e.preventDefault();
     setAddress();
@@ -171,8 +172,10 @@ function App() {
               ...prev,
               changed: prev.changed+1,
             }))
+
           })
-          .catch((error) => console.error(error));
+          .catch((error) => {console.error(error);});
+          
         }
         
       })
