@@ -18,7 +18,6 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
 
 
   const [menuPage, setMenuPage] = useState(0);
-  const [offsetPage, setOffsetPage] = useState(0);
 
   const navigateToHome = () => {
       navigate('/');  
@@ -39,17 +38,14 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
 
   useEffect(()=>{
     if(selectedAddress.locality){
-      // console.log("update cookie: ",selectedAddress);
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
     }else if(getCookieAddress()){
       setAddress(getCookieAddress());
-      // console.log("cookie address: ",getCookieAddress());
       setSelectedAddress(getCookieAddress());
     }else{
         alert("Invalid Address");
         navigateToHome();
-      
     }
   },[])
 
@@ -60,11 +56,12 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
     if(selectedAddress.locality){
       setCookieAddress(selectedAddress);
       setAddress(selectedAddress);
-      // console.log("update cookie2: ",selectedAddress);
     }
   },[selectedAddress]);
 
-
+useEffect(()=>{
+  setMenuPage(0);
+},[recData])
 
   const createList = (restaurant_list) => (
     <RecList

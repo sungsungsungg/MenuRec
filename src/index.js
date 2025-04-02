@@ -52,17 +52,7 @@ if (process.env.NODE_ENV === 'production') {
       });
 }
 
-// const db = new pg.Client({
-//     connectionString: process.env.DATABASE_URL,
-//     ssl:{
-//         rejectUnauthorized: false
-//     },
-//     // user: process.env.PG_USER,
-//     // password: process.env.PG_PASSWORD,
-//     // database: process.env.PG_DATABASE,
-//     // host: process.env.PG_HOST,
-//     // port: process.env.PG_PORT,
-//   });
+
   
 db.connect();
 
@@ -70,21 +60,12 @@ db.connect();
 
 async function getFoodList(search){
     let result;
-    // let sortBy = "";
+
     let lowerBound = parseInt(search.minPrice);
     let upperBound = parseInt(search.maxPrice);
 
-    // if(search.sortBy){
-    //     switch(search.sortBy){
-    //         case "price": sortBy = " ORDER BY price ASC"; break;
-    //         case "reviews": sortBy = " ORDER BY review_count ASC"; break;
-    //         case "rating": sortBy = " ORDER BY rating ASC"; break;
-    //         case "distance": sortBy = ""; break;
-    //     }
-    // }
-    // console.log(search);
+
     console.log(search);
-    console.log(lowerBound);
 
     let ingredient = [];
     if(search.ingredient){
@@ -111,14 +92,7 @@ async function getFoodList(search){
         
     
 
-    if(search.category && search.ingredient){
-
-        
-
-        console.log(ingredient);
-        if(search.minPrice){
-            
-            
+    if(search.category && search.ingredient){ 
             result = await db.query(
                 `SELECT *
                 FROM menu_items
@@ -140,37 +114,7 @@ async function getFoodList(search){
                 ) <= 4828.03; -- 3 miles in meters
                 ;`,[category,ingredient,lowerBound, upperBound, search.coordinates.lat, search.coordinates.lng]
             )
-        }else{
-            result = await db.query(
-                `SELECT *
-                FROM menu_items
-                JOIN restaurants ON restaurants.yelp_id = menu_items.restaurantid
-                WHERE EXISTS (
-                SELECT 1
-                FROM jsonb_array_elements(categories) AS category
-                WHERE category->>'alias' = ANY($1::text[])
-                )
-                AND ingredient && $2::text[]
-                AND earth_distance(
-                    ll_to_earth(
-                        (restaurants.coordinates->>'latitude')::double precision, 
-                        (restaurants.coordinates->>'longitude')::double precision
-                    ), 
-                    ll_to_earth($3,$4) -- User's location
-                ) <= 4828.03; -- 3 miles in meters
-                ; `,[category,ingredient, search.coordinates.lat,search.coordinates.lng]
-            )
-        }
     }else if(search.category){
-        if(search.minPrice){
-            // let lowerBound = 0;
-            // let upperBound = 0;
-            // switch(search.price){
-            //     case "$": lowerBound = 0; upperBound = 15; break;
-            //     case "$$": lowerBound = 15; upperBound = 25; break;
-            //     case "$$$": lowerBound = 25; upperBound = 35; break;
-            //     case "$$$$": lowerBound = 35; upperBound = 100; break;
-            // }
             result = await db.query(
                 `SELECT *
                 FROM menu_items
@@ -191,36 +135,7 @@ async function getFoodList(search){
                 ) <= 4828.03; -- 3 miles in meters
                 ;`,[category,lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
             )
-        }else{
-            result = await db.query(
-                `SELECT *
-                FROM menu_items
-                JOIN restaurants ON restaurants.yelp_id = menu_items.restaurantid
-                WHERE EXISTS (
-                SELECT 1
-                FROM jsonb_array_elements(categories) AS category
-                WHERE category->>'alias' = ANY($1::text[])
-                )  
-                AND earth_distance(
-                    ll_to_earth(
-                        (restaurants.coordinates->>'latitude')::double precision, 
-                        (restaurants.coordinates->>'longitude')::double precision
-                    ), 
-                    ll_to_earth($2,$3) -- User's location
-                ) <= 4828.03; -- 3 miles in meters
-                ;`,[category, search.coordinates.lat,search.coordinates.lng]
-            )
-        }
     }else if(search.ingredient){
-        if(search.minPrice){
-            // let lowerBound = 0;
-            // let upperBound = 0;
-            // switch(search.price){
-            //     case "$": lowerBound = 0; upperBound = 15; break;
-            //     case "$$": lowerBound = 15; upperBound = 25; break;
-            //     case "$$$": lowerBound = 25; upperBound = 35; break;
-            //     case "$$$$": lowerBound = 35; upperBound = 100; break;
-            // }
             result = await db.query(
                 `SELECT *
                 FROM menu_items
@@ -236,31 +151,7 @@ async function getFoodList(search){
                     ll_to_earth($4,$5) -- User's location
                 ) <= 4828.03; -- 3 miles in meters;`,[ingredient,lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
             )
-        }else{
-            result = await db.query(
-                `SELECT *
-                FROM menu_items
-                JOIN restaurants ON restaurants.yelp_id = menu_items.restaurantid
-                WHERE ingredient && $1::text[]
-                AND earth_distance(
-                    ll_to_earth(
-                        (restaurants.coordinates->>'latitude')::double precision, 
-                        (restaurants.coordinates->>'longitude')::double precision
-                    ), 
-                    ll_to_earth($2,$3) -- User's location
-                ) <= 4828.03; -- 3 miles in meters`,[ingredient, search.coordinates.lat,search.coordinates.lng]
-            )
-        }
     }else{
-        if(search.minPrice){
-            // let lowerBound = 0;
-            // let upperBound = 0;
-            // switch(search.price){
-            //     case "$": lowerBound = 0; upperBound = 15; break;
-            //     case "$$": lowerBound = 15; upperBound = 25; break;
-            //     case "$$$": lowerBound = 25; upperBound = 35; break;
-            //     case "$$$$": lowerBound = 35; upperBound = 100; break;
-            // }
             result = await db.query(
                 `SELECT *
                 FROM menu_items
@@ -275,9 +166,6 @@ async function getFoodList(search){
                     ll_to_earth($3,$4) -- User's location
                 ) <= 4828.03; -- 3 miles in meters;`,[lowerBound, upperBound, search.coordinates.lat,search.coordinates.lng]
             )
-        }else{
-            return result;
-        }
     }
     return result.rows;
 }   
