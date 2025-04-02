@@ -84,6 +84,7 @@ async function getFoodList(search){
     // }
     // console.log(search);
     console.log(search);
+    console.log(lowerBound);
 
     let ingredient = [];
     if(search.ingredient){
@@ -161,7 +162,7 @@ async function getFoodList(search){
             )
         }
     }else if(search.category){
-        if(search.price){
+        if(search.minPrice){
             // let lowerBound = 0;
             // let upperBound = 0;
             // switch(search.price){
@@ -211,7 +212,7 @@ async function getFoodList(search){
             )
         }
     }else if(search.ingredient){
-        if(search.price){
+        if(search.minPrice){
             // let lowerBound = 0;
             // let upperBound = 0;
             // switch(search.price){
@@ -251,7 +252,7 @@ async function getFoodList(search){
             )
         }
     }else{
-        if(search.price){
+        if(search.minPrice){
             // let lowerBound = 0;
             // let upperBound = 0;
             // switch(search.price){
