@@ -170,141 +170,51 @@ img{
   
   #contact {
     background-color: #efdfc3;
+    min-width: 100%;
   }
   
-  .title {
-    color: #48a6a7;
-  }
   
-  /* Modals */
-  
-  .modal {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 80%;
-    width: 80%;
-    display: block;
-  
-    background-color: #9acbd0;
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-    z-index: 10;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
-    z-index: 5;
-  }
-  
-  .close-modal {
-    position: absolute;
-    right: 1rem;
-    font-size: 3rem;
-    color: #333;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
-  
-  .hidden {
-    display: none;
-  }
   
   .btn-sns:hover {
     color: white;
   }
   
-  .show-modal:hover img {
-    transform: scale(1.1);
-    border-radius: 11.1%;
+  
+
+  .ms-3 svg{
+    color: #EF9651;
+  }
+
+
+
+  html, body {
+    height: 100%;          /* Ensure body takes full height */
+    margin: 0;             /* Remove any default margin */
+    display: flex;         /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
   }
   
-  .show-modal div {
-    overflow: hidden;
+  #root {
+    height: 100%;          /* Ensure body takes full height */
+    margin: 0;             /* Remove any default margin */
+    display: flex;         /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    flex: 1;               /* Ensure root takes all available space */
   }
   
-  .show-modal img {
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 30px;
-    object-fit: cover;
-    min-height: 100%;
-    min-width: 100%;
+  #root2{
+    flex: 1;  
+    height: 100%;          /* Ensure body takes full height */
+    margin: 0;             /* Remove any default margin */
+    display: flex;         /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+                 /* Ensure root takes all available space */
   }
-  
-  .show-modal > div {
-    border: solid;
-    border-color: black;
+
+#contact {
+    margin-top: auto;      /* Push footer to the bottom */
   }
-  
-  .btn-appear {
-    z-index: -1;
-    position: absolute;
-    display: flex;
-  
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    /* word-wrap: break-word; */
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 100;
-    transition: all 0.2s;
-    width: auto;
-    /* overflow: hidden; */
-  
-    background-color: red;
-    background-color: rgba(72, 166, 167, 0.4);
-    /* background-color: #48a6a7; */
-    backdrop-filter: blur(10px);
-  
-    /* border-color: white;
-    border: solid;
-    border-width: 1px; */
-    border-radius: 50rem;
-    /* box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1); */
+
+  .whole{
+    flex:1;
   }
-  
-  .show-modal:hover .btn-appear {
-    z-index: 1;
-  }
-  
-  .modal-image {
-    max-width: 300px;
-    border-radius: 10%;
-  }
-  
-  .modal-content {
-    background-color: #9acbd0;
-    justify-self: center;
-    align-self: center;
-    border: none;
-    box-shadow: none;
-  
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .modal-content .btn-appear {
-    z-index: 200;
-    padding: 1rem;
-  
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  

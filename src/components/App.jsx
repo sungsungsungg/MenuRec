@@ -6,7 +6,7 @@ import SearchPage from "./pages/search.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
-import Footer from './marks/footer.jsx'
+
 
 function App() {
 
@@ -197,7 +197,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="root2">
       <Router>
         <Routes>
           {/* Define routes for HomePage and OtherPage */}
@@ -227,7 +227,6 @@ function App() {
           />
         </Routes>
       </Router>
-      <Footer/>
     </div>
     
   );

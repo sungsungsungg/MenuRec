@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import Header from "../marks/header.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../marks/footer.jsx"
 
 function SearchPage({ recData, handleSubmit, handleChange, coordinates, selectedAddress, setSelectedAddress }) {
 
@@ -96,34 +97,37 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
   }
 
   return (
-    <StrictMode>
-      <Header address={address?.locality||" "}/>
+       <div className="whole" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        
 
+        <Header address={address?.locality||" "}/>
+        
+        <div className="search" style={{flex:1}}>
+          
+        <form onSubmit={handleSubmit}>
+          <Category onChange={handleChange}/>
+          <Ingredient onChange={handleChange} />
+          <Price onChange={handleChange} />
+          <button type="submit">Apply</button>
+        </form>
 
-      
-      <div className="search">
-      <form onSubmit={handleSubmit}>
-        <Category onChange={handleChange}/>
-        <Ingredient onChange={handleChange} />
-        <Price onChange={handleChange} />
-        <button type="submit">Apply</button>
-      </form>
+        
+        
+        <div className="container-menu">
+          {recData.item?<button className="pageButton" onClick={previousPage}> &lt;</button>:null}
+          {recData.item?<button className= "pageButton" onClick={nextPage}>&gt;</button>:null}
+        </div>
+          <br/>
+          {recData.item?<SortBy onChange={handleChange} />:null}
+          <br/>
 
-      
-      
-      <div className="container-menu">
-        {recData.item?<button className="pageButton" onClick={previousPage}> &lt;</button>:null}
-        {recData.item?<button className= "pageButton" onClick={nextPage}>&gt;</button>:null}
+          {recData.item ? (recData.item.length>0? recData.item.slice(menuPage*10,menuPage*10+10).map(createList):"No list available") : "Select your option"}
+        
       </div>
-        <br/>
-        {recData.item?<SortBy onChange={handleChange} />:null}
-        <br/>
-
-        {recData.item ? (recData.item.length>0? recData.item.slice(menuPage*10,menuPage*10+10).map(createList):"No list available") : "Select your option"}
-      
-    </div>
     
-    </StrictMode>
+      <Footer />
+    </div>
+
     
   );
 }
