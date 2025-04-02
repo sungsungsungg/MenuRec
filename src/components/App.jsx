@@ -6,6 +6,7 @@ import SearchPage from "./pages/search.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
+import Footer from './marks/footer.jsx'
 
 function App() {
 
@@ -196,35 +197,39 @@ function App() {
 
 
   return (
-    <Router>
-      <Routes>
-        {/* Define routes for HomePage and OtherPage */}
-        <Route
-          path="/"
-          element={
-            
-            <HomePage
-              selectedAddress={selectedAddress}
-              onAddressSelect={handleAddressSelect}
-              handleSubmitAddress={handleSubmitAddress}
-            />
-          }
-        />
-        <Route
-          path="/search"
-          element={
-            <SearchPage
-              recData={recData}
-              handleSubmit={handleSubmit}
-              handleChange={handleChange}
-              coordinates={coordinates}
-              selectedAddress={selectedAddress}
-              setSelectedAddress={setSelectedAddress}
-            />
-          }
-        />
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <Routes>
+          {/* Define routes for HomePage and OtherPage */}
+          <Route
+            path="/"
+            element={
+              
+              <HomePage
+                selectedAddress={selectedAddress}
+                onAddressSelect={handleAddressSelect}
+                handleSubmitAddress={handleSubmitAddress}
+              />
+            }
+          />
+          <Route
+            path="/search"
+            element={
+              <SearchPage
+                recData={recData}
+                handleSubmit={handleSubmit}
+                handleChange={handleChange}
+                coordinates={coordinates}
+                selectedAddress={selectedAddress}
+                setSelectedAddress={setSelectedAddress}
+              />
+            }
+          />
+        </Routes>
+      </Router>
+      <Footer/>
+    </div>
+    
   );
 }
 

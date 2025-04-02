@@ -17,7 +17,7 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
 
 
   const [menuPage, setMenuPage] = useState(0);
-
+  const [offsetPage, setOffsetPage] = useState(0);
 
   const navigateToHome = () => {
       navigate('/');  
@@ -85,6 +85,10 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
     }
   }
 
+  function setPage(page){
+    setMenuPage(page);
+  }
+
   function nextPage(){
     if(menuPage<Math.floor(recData.item.length/10)){
       setMenuPage((prev)=>prev+1);
@@ -107,7 +111,7 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
 
       
       
-      <div className="container">
+      <div className="container-menu">
         {recData.item?<button className="pageButton" onClick={previousPage}> &lt;</button>:null}
         {recData.item?<button className= "pageButton" onClick={nextPage}>&gt;</button>:null}
       </div>
@@ -115,7 +119,7 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
         {recData.item?<SortBy onChange={handleChange} />:null}
         <br/>
 
-        {recData.item ? recData.item.slice(menuPage*10,menuPage*10+10).map(createList) : "Select your option"}
+        {recData.item ? (recData.item.length>0? recData.item.slice(menuPage*10,menuPage*10+10).map(createList):"No list available") : "Select your option"}
       
     </div>
     
