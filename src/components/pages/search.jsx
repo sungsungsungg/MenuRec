@@ -139,7 +139,7 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
   }
 
   function firstPage(){
-    console.log("resetting to the first page");
+    // console.log("resetting to the first page");
     setMenuPage(0);
   }
 
