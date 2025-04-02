@@ -5,7 +5,6 @@ import HomePage from "./pages/home.jsx";
 import SearchPage from "./pages/search.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import { useNavigate } from 'react-router-dom';
 
 
 function App() {
@@ -61,8 +60,6 @@ function App() {
     useEffect(()=>{
       if(getCookieForm()){
         setFormData({...getCookieForm(), category: "", ingredient: "", minPrice: '0', maxPrice:"100", sortBy: "rating"});
-        // console.log("cookie address: ",getCookieAddress());
-        // setSelectedAddress(getCookieAddress());
       }
     },[])
   
@@ -110,7 +107,6 @@ function App() {
         setRecData({...recData, item: sortedRecData});
       }
     }
-    // console.log(selectedAddress);
   },[formData.sortBy,formData.changed, selectedAddress.coordinates]);
 
   const handleAddressSelect = (updatedAddress) => {

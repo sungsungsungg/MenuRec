@@ -59,9 +59,6 @@ function SearchPage({ recData, handleSubmit, handleChange, coordinates, selected
     }
   },[selectedAddress]);
 
-useEffect(()=>{
-  setMenuPage(0);
-},[recData])
 
   const createList = (restaurant_list) => (
     <RecList
@@ -174,7 +171,7 @@ useEffect(()=>{
           <Category onChange={handleChange}/>
           <Ingredient onChange={handleChange} />
           <Price onChange={handleChange} />
-          <button type="submit">Apply</button>
+          <button type="submit" onClick={firstPage}>Apply</button>
         </form>
 
         <div style={{display:'flex', flexDirection: 'column'}}>
